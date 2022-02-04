@@ -107,7 +107,7 @@ public class Account {
     		double amount = Double.parseDouble(inStr);
     	if(amount>=0) { // a checker in case  the user enters a negative value.
     		calcCheckingDeposit(amount);
-    		System.out.println("\n"+ "New Checking-Account Balance: "+ moneyFormat.format(checkingBalance +amount));
+    		System.out.println("\n"+ "New Checking-Account Balance: "+ moneyFormat.format(checkingBalance));
     	} 
     	
     	else {
@@ -131,7 +131,7 @@ public class Account {
     	
     	if(amount>=0) { // a checker in case  the user enters a negative value.
     		calcSavingDeposit(amount);
-    		System.out.println("\n"+ "New Saving-Account Balance: "+ moneyFormat.format(savingBalance + amount));
+    		System.out.println("\n"+ "New Saving-Account Balance: "+ moneyFormat.format(savingBalance));
     	}
     	else {
     		System.out.println("Please Enter Valid Amount."+ "\n");
